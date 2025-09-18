@@ -1,7 +1,7 @@
 # Prompt the user for input
 task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ")
-timeliness = input("Is it time-bound? (yes/no): ")
+time_bound = input("Is it time-bound? (yes/no): ")
 
 reminder_a = "'" + task + "'"
 reminder_no = ". Consider completing it when you have free time."
@@ -22,9 +22,9 @@ match priority:
 	case "medium":
 		reminder_b = reminder_a + priority_medium
 
-if timeliness == "yes":
+if time_bound == "yes":
 	reminder_c = reminder_b + reminder_yes
-elif timeliness == "no":
+elif time_bound == "no":
 	reminder_c = reminder_d + reminder_b + reminder_no
 
 print(reminder_c)
