@@ -22,10 +22,9 @@ match priority:
 	case "medium":
 		reminder_b = reminder_a + priority_medium
 
-match timeliness:
-	case "yes":
-		reminder_c = reminder_b + reminder_yes
-	case "no":
-		reminder_c = reminder_d + reminder_b + reminder_no
+if timeliness == "yes":
+	reminder_c = reminder_b + reminder_yes
+elif timeliness == "no":
+	reminder_c = reminder_d + reminder_b + reminder_no
 
 print(reminder_c)
