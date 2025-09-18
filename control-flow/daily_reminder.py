@@ -9,6 +9,7 @@ reminder_yes = " that requires immediate attention today!"
 reminder_b = ""
 reminder_c = ""
 reminder_d = "Note: "
+reminder_e = "Reminder: "
 
 priority_high = " is a high priority task"
 priority_medium = " is a medium priority task"
@@ -23,8 +24,8 @@ match priority:
 		reminder_b = reminder_a + priority_medium
 
 if time_bound == "yes":
-	reminder_c = reminder_b + reminder_yes
+	reminder_c = reminder_e + reminder_b + reminder_yes
 elif time_bound == "no":
 	reminder_c = reminder_d + reminder_b + reminder_no
 
-print(reminder_c)
+print(f"{reminder_c}")
