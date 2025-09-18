@@ -1,8 +1,8 @@
 # Prompt the user to enter the numbers and operator
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-operator_ = input("Choose the operation (+, -, *, /): ")
-match operator_:
+operation = input("Choose the operation (+, -, *, /): ")
+match operation:
 	case "+":
 		result_ = num1 + num2
 	case "-":
