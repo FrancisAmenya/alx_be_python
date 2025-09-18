@@ -20,6 +20,6 @@ match priority:
 		reminder_a = reminder_a + priority_medium
 
 if time_bound == "yes":
-	print(f"'Reminder: ' + {reminder_a} + {reminder_yes}")
+	print(f"Reminder: {reminder_a} {reminder_yes}")
 elif time_bound == "no":
-        print(f"'Note: ' + {reminder_a} + {reminder_no}")
+        print(f"Note: {reminder_a} {reminder_no}")
