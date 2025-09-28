@@ -3,8 +3,8 @@
 # Define Global Conversion Factors
 # Note: It's important to use floating-point numbers (e.g., 5.0/9.0) for accurate division.
 # Global variables are automatically available for reading inside functions.
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5.0 / 9.0
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9.0 / 5.0
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 FREEZING_POINT_DIFFERENCE = 32
 
 # The formulas are:
