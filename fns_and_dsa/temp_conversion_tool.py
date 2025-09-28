@@ -8,8 +8,8 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 FREEZING_POINT_DIFFERENCE = 32
 
 # The formulas are:
-# C = (F - 32) * (5/9)
-# F = (C * (9/5)) + 32
+# C = (F - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
+# F = (C * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
 def convert_to_celsius(fahrenheit):
     """
@@ -19,7 +19,7 @@ def convert_to_celsius(fahrenheit):
     :return: Temperature in degrees Celsius (float).
     """
     # The function reads the global variable FAHRENHEIT_TO_CELSIUS_FACTOR
-    celsius = (fahrenheit - FREEZING_POINT_DIFFERENCE) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
     return celsius
 
 def convert_to_fahrenheit(celsius):
@@ -30,7 +30,7 @@ def convert_to_fahrenheit(celsius):
     :return: Temperature in degrees Fahrenheit (float).
     """
     # The function reads the global variable CELSIUS_TO_FAHRENHEIT_FACTOR
-    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + FREEZING_POINT_DIFFERENCE
+    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     return fahrenheit
 
 def main():
