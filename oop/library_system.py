@@ -9,6 +9,8 @@ class Book:
     def get_details(self):
         return f"Book: {self.title} by {self.author}"
 
+    def __str__(self):
+        return f"Book: {self.title} by {self.author}"
 
 # Derived class 1: EBook (Mtoto)
 class EBook(Book):
@@ -19,6 +21,8 @@ class EBook(Book):
     def get_details(self):
         return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
+    def __str__(self):
+        return f"EBook: {self.title}, {self.author}, File Size: {self.file_size}KB"
 
 # Derived class 2: PrintBook (Mtoto)
 class PrintBook(Book):
@@ -29,6 +33,8 @@ class PrintBook(Book):
     def get_details(self):
         return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
+    def __str__(self):
+        return f"PrintBook: {self.title}, {self.author}, Page Count: {self.page_count}"
 
 # Composition class: Library (Binamu)
 class Library:
