@@ -12,7 +12,7 @@ class Book:
 
 	# To demonstrate recreating the object (instancing?)
 	def __repr__(self):
-		return f"Book ('{self.title}', '{self.author}', {self.year})"
+		return f"Book('{self.title}', '{self.author}', {self.year})"
 
 	# Deleting a book instance
 	def __del__(self):
